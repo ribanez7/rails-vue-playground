@@ -1,10 +1,11 @@
 <template>
-  <div>
+  <div id="flavorOfDirectives">
+    <time>{{ myTime }}</time>
     <!-- <template> -->
-      <h1 v-if="!message">You must send a message for help!</h1>
-      <h2 v-else>You have sent a message!</h2>
-      <!-- <p>Dispatch a messenger immediately!</p> -->
-      <!-- <p>To nearby kingdom of Hearts!</p> -->
+    <h1 v-if="!message">You must send a message for help!</h1>
+    <h2 v-else>You have sent a message!</h2>
+    <!-- <p>Dispatch a messenger immediately!</p> -->
+    <!-- <p>To nearby kingdom of Hearts!</p> -->
     <!-- </template> -->
     <textarea v-model="message"></textarea>
     <button v-if="message">
@@ -37,7 +38,8 @@ export default {
     return {
       message: "Our king is dead! Send help!",
       name: 'Universe',
-      gender: 'female'
+      gender: 'female',
+      myTime: new Date
     }
   }
 }

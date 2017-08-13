@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
+  <div>
+    <hr/>
+    <pre>{{ $data }}</pre>
   </div>
 </template>
 
@@ -8,7 +9,9 @@
 export default {
   data: function () {
     return {
-      message: new Date
+      message: "Our king is dead! Send help!",
+      name: 'Universe',
+      gender: 'female'
     }
   }
 }
