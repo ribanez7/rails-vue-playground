@@ -1,9 +1,13 @@
 import Vue from 'vue'
+import TurbolinksAdapter from 'vue-turbolinks'
 import Calendar from './calendar.vue'
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.appendChild(document.createElement('calendar'))
-  const app = new Vue(Calendar).$mount('calendar')
+Vue.use(TurbolinksAdapter)
 
-  console.log(app)
+document.addEventListener('turbolinks:load', () => {
+    const element = document.querySelector('calendar-app')
+    console.log(element)
+    if (element != null) {
+	const app = new Vue(Calendar).$mount('calendar-app')
+    }
 })
