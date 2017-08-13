@@ -1,0 +1,20 @@
+= stylesheet_pack_tag 'calendar', media: 'all', 'data-turbolinks-track': 'reload'
+section
+  h1
+    | Calendar app:
+  calendar-app
+  div
+    = link_to 'A Flavor of Directives', fundamentals_flavor_of_directives_path
+  div
+    = link_to 'List rendering', fundamentals_list_rendering_path
+  div
+    = link_to 'Interactivity', fundamentals_interactivity_path
+  div
+    = link_to 'Filters', fundamentals_filters_path
+  div
+    = link_to 'Components', fundamentals_components_path
+  div
+    = link_to 'Custom events', fundamentals_custom_events_path
+  div
+    = link_to 'Class and Style bindings', fundamentals_class_and_style_bindings_path
+= javascript_pack_tag 'calendar', 'data-turbolinks-track': 'reload'
