@@ -5,9 +5,8 @@ import Calendar from './calendar.vue'
 Vue.use(TurbolinksAdapter)
 
 document.addEventListener('turbolinks:load', () => {
-    const element = document.querySelector('calendar-app')
-    console.log(element)
-    if (element != null) {
-	const app = new Vue(Calendar).$mount('calendar-app')
+    const calendarApp = document.querySelector('calendar-app')
+    if (calendarApp != null) {
+	const app = new Vue(Calendar).$mount(calendarApp)
     }
 })
