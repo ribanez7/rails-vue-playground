@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'consuming_an_api', to: 'consuming_an_api#index'
+  get 'consuming_an_api/http_clients'
+  get 'consuming_an_api/pagination'
+
   root to: 'fundamentals#index'
   get 'fundamentals/flavor_of_directives'
   get 'fundamentals/list_rendering'

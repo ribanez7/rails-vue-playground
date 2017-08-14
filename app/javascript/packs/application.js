@@ -10,6 +10,8 @@
 import 'calendar'
 import 'flavor_of_directives'
 import 'list_rendering'
+import 'http_clients'
+// import 'pagination'
 
 console.log('Hello World from Webpacker')
 
